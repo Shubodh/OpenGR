@@ -19,6 +19,9 @@ typedef pcl::PointNormal PointNT;
 typedef pcl::PointCloud<PointNT> PointCloudT;
 typedef pcl::visualization::PointCloudColorHandlerCustom<PointNT> ColorHandlerT;
 
+//CODE CH
+// pcl::Correspondences correspondences;
+
 using namespace gr;
 
 // Align a rigid object to a scene with clutter and occlusions
@@ -74,6 +77,8 @@ main (int argc, char **argv)
   {
     pcl::ScopeTime t("Alignment");
     align.align (*object_aligned);
+    //CODE CH
+    // correspondences = (*align.correspondences_);
   }
 
   if (align.hasConverged ())
@@ -90,6 +95,12 @@ main (int argc, char **argv)
 
     // Show alignment
     pcl::visualization::PCLVisualizer visu("Alignment - Super4PCS");
+    
+    // CODE CH
+    // visu.addCorrespondences<PointNT>(scene, object_aligned, correspondences);
+    // visu.addCorrespondences<PointT>(scene, object_aligned, correspondences);
+
+
     visu.addPointCloud (scene, ColorHandlerT (scene, 0.0, 255.0, 0.0), "scene");
     visu.addPointCloud (object_aligned, ColorHandlerT (object_aligned, 0.0, 0.0, 255.0), "object_aligned");
     visu.spin ();
