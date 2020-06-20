@@ -19,5 +19,8 @@ Here's a BibTeX entry for OpenGR that you can use in your academic publications:
 
 ********
 
-Fork details (to be added):
+# Grad + OpenGR
+This folder is meant for OpenGR experimentation and documentation. Be it as small as a bash script or a big feature like visualization, please commit and document everything.
+
+In the future:
 * Visualization
