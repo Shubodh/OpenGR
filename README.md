@@ -38,10 +38,5 @@ In the future:
    `cd scripts`
    and then run command `./run-example.sh`
 4. Now to test with our own dataset copy the points clouds of .obj file format to your current working directory.
-5. And run it with
-   `
-   ../bin/Super4PCS -i path_to_file1 path_to_file2 -o 0.7 -d 0.01 -t 1000 -n 200 -m output.txt
-
-`
-
+5. And run it with `../bin/Super4PCS -i path_to_file1 path_to_file2 -o 0.7 -d 0.01 -t 1000 -n 200 -m output.txt`
 6. Output is always coming an identity matrix.
