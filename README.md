@@ -18,3 +18,6 @@ Here's a BibTeX entry for OpenGR that you can use in your academic publications:
  ```
 
 ********
+
+Fork details (to be added):
+* Visualization
